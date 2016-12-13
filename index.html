@@ -3,12 +3,10 @@
 	<head>
 		<title>Beautiful page</title>
 		<script src="https://use.fontawesome.com/5d79f0411c.js"></script>
-		<!-- Compiled and minified JavaScript -->
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		 <!-- Compiled and minified CSS -->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-		<link rel="stylesheet" type="text/css" href="./procss.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./style.css">
 		<!-- Chrome, Firefox OS and Opera -->
 		<meta name="theme-color" content="#4285f4">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -19,8 +17,8 @@
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">BrandText</a>
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="main-nav-collapse">
+						<a class="navbar-brand" href="index.html"><i class="fa fa-life-ring" aria-hidden="true"></i> BrandText</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
 	            <span class="sr-only">Toggle Navigation</span>
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
@@ -28,10 +26,13 @@
 	          </button>
 					</div>
 
-					<div>
+					<div class="collapse navbar-collapse" id="main-nav-collapse">
 		        <ul class="nav navbar-nav navbar-right">
 		          <li><a href="index.html">Home</a></li>
 		          <li><a href="about.html">About</a></li>
+							<li><a href="/prosjekter/coin flip/">Coin Flip</a></li>
+							<li><a href="/prosjekter/pi/">Pi</a></li>
+							<li><a href="/prosjekter/coin flip/">Calculator</a></li>
 		         </ul>
 	        </div>
 				</div>
@@ -41,28 +42,6 @@
 		<div class="text-center home-callout containter-fluid">
 			<h1>This is my beutiful site!</h1>
 		</div>
-		<i class="fa fa-camera-retro"></i> fa-camera-retro
-		<i class="fa fa-camera-retro fa-5x"></i> fa-lg
-
-		  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Textarea</label>
-        </div>
-      </div>
-    </form>
-  </div>
-
-  <a class="waves-effect waves-light btn">button</a>
-    <div class="chip">
-    <img src="images/yuna.jpg" alt="Contact Person">
-    Jane Doe
-  </div>
-    <div class="progress">
-      <div class="indeterminate"></div>
-  </div>
 
 	</body>
 </html>
