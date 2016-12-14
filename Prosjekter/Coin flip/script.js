@@ -71,7 +71,7 @@ var coinFlipPieChart = new Chart(ctx2,{
 });
 
 function coinFlip() {
-    flipAnimation();
+    // flipAnimation();
     var flip = Math.random();
     if (flip >= 0.5) {
         document.getElementById('coin').innerHTML = "Heads";
@@ -119,20 +119,21 @@ function flipPercentage() {
   document.getElementById('headsPercent').innerHTML = Math.round(hp * 100);
   document.getElementById('tailsPercent').innerHTML = Math.round(tp * 100);
 }
-function flipAnimation() {
-  // document.getElementById('coinDiv').addEventListener( 'click', function( event ) {
-  if (tempToggle == 1) {
-      event.preventDefault();
-      document.getElementById( 'side-2' ).className = 'flip flip-side-1';
-      document.getElementById( 'side-1' ).className = 'flip flip-side-2';
-      tempToggle = 0;
-  // }, false );
-  } else {
-  // document.getElementById('headsPercent').addEventListener( 'click', function( event ) {
-      event.preventDefault();
-      document.getElementById( 'side-2' ).className = 'flip';
-      document.getElementById( 'side-1' ).className = 'flip';
-      tempToggle = 1
-  // }, false );
-  }
-}
+
+// function flipAnimation() {
+//   // document.getElementById('coinDiv').addEventListener( 'click', function( event ) {
+//   if (tempToggle == 1) {
+//       event.preventDefault();
+//       document.getElementById( 'side-2' ).className = 'flip flip-side-1';
+//       document.getElementById( 'side-1' ).className = 'flip flip-side-2';
+//       tempToggle = 0;
+//   // }, false );
+//   } else {
+//   // document.getElementById('headsPercent').addEventListener( 'click', function( event ) {
+//       event.preventDefault();
+//       document.getElementById( 'side-2' ).className = 'flip';
+//       document.getElementById( 'side-1' ).className = 'flip';
+//       tempToggle = 1
+//   // }, false );
+//   }
+// }
