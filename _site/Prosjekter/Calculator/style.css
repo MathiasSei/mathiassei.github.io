@@ -1,0 +1,16 @@
+body {
+	text-align: center;
+}
+
+input {
+	text-align: right;
+}
+
+#calculate {
+	width: 100px;
+	height: 100px;
+}
+
+#displayField {
+	width: 100px;
+}
