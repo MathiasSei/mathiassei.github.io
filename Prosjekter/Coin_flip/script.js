@@ -1,6 +1,7 @@
 var heads = 0;
 var tails = 0;
 var tempToggle = 0;
+var tempToggleStats = 0;
 var canvas = document.getElementById("chart");
 var canvas2 = document.getElementById('pieChart');
 var ctx = canvas.getContext('2d');
@@ -100,10 +101,12 @@ function flipXtimes() {
 
 function toggleStats() {
   var x = document.getElementById('chartDiv');
-  if (x.style.display === 'none') {
+  if (tempToggleStats === 0) {
     x.style.display = 'block';
+    tempToggleStats = 1;
   } else {
     x.style.display = 'none';
+    tempToggleStats = 0;
   }
 }
 
